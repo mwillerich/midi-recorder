@@ -8,6 +8,7 @@ Dependencies
 ------------
   - [Node.js](https://nodejs.org) 4.x or higher
   - midi (npm module)
+  - log (npm module)
 
 How to run
 ----------

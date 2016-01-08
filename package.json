@@ -1,0 +1,28 @@
+{
+  "name": "midi-recorder",
+  "version": "1.0.0",
+  "description": "bla",
+  "main": "record.js",
+  "dependencies": {
+    "command-line-args": "^2.1.4",
+    "midi": "^0.9.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mwillerich/midi-recorder.git"
+  },
+  "keywords": [
+    "midi",
+    "terminal"
+  ],
+  "author": "Matthias Willerich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwillerich/midi-recorder/issues"
+  },
+  "homepage": "https://github.com/mwillerich/midi-recorder"
+}
