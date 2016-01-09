@@ -2,16 +2,20 @@ var midi = require('midi'),
     Log = require('log'),
     fs = require('fs');
 
+//TODO args log filename
+var logFile = 'my.log';
+//TODO args log filename or read from log
+var midiPortName = "DJControl Compact";
 
 var output = new midi.output();
 
 // Create a virtual input port.
-output.openVirtualPort("DJControl Compact");
+output.openVirtualPort(midiPortName);
 
 var replayStarted = false;
 
 function replayLog() {
-    var stream = fs.createReadStream(__dirname + '/my.log')
+    var stream = fs.createReadStream(__dirname + '/' + logFile)
     var log = new Log('info', stream);
     var delay = 0;
     log.on('line', function(line) {
